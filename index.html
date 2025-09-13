@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Animated Stopwatch</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Particle Background -->
+  <div id="particles"></div>
+
+  <!-- Stopwatch -->
+  <div class="stopwatch">
+    <svg class="progress-ring" width="120" height="120">
+      <circle class="progress-ring__circle" stroke="white" stroke-width="6" fill="transparent" r="54" cx="60" cy="60"/>
+    </svg>
+    <div class="time">00:00.00</div>
+    <div class="buttons">
+      <button id="start">Start</button>
+      <button id="stop" disabled>Stop</button>
+      <button id="lap" disabled>Lap</button>
+      <button id="reset" disabled>Reset</button>
+    </div>
+    <ul class="laps"></ul>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
